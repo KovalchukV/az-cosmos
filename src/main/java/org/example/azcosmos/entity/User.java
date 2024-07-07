@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 
 import java.util.UUID;
 
-@Container(containerName = "users")
+//@Container(containerName = "users")
 public class User {
 
     @Id

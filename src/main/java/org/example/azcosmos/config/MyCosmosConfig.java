@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@EnableCosmosRepositories(basePackages = "org.example.azcosmos.repo")
+//@Configuration
+//@EnableCosmosRepositories(basePackages = "org.example.azcosmos.repo")
 public class MyCosmosConfig extends AbstractCosmosConfiguration {
 
     @Override

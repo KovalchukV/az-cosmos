@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-//@Repository
+@Repository
 public interface UserRepo extends CosmosRepository<User, UUID> {
 }

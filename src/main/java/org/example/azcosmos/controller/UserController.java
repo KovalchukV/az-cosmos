@@ -14,16 +14,16 @@ import java.util.List;
 @RestController
 @RequestMapping("/users")
 public class UserController {
-//
-//    private final UserRepo userRepo;
-//
-//    public UserController(UserRepo userRepo) {
-//        this.userRepo = userRepo;
-//    }
+
+    private final UserRepo userRepo;
+
+    public UserController(UserRepo userRepo) {
+        this.userRepo = userRepo;
+    }
 
     @GetMapping
-    public ResponseEntity<List<String>> getAll() {
-//        return ResponseEntity.ok(userRepo.findAll());
-        return ResponseEntity.ok(List.of("hello"));
+    public ResponseEntity<Iterable<User>> getAll() {
+        return ResponseEntity.ok(userRepo.findAll());
+//        return ResponseEntity.ok(List.of("hello"));
     }
 }
